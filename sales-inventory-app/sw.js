@@ -1,21 +1,20 @@
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open('sales-inventory-cache').then(function(cache) {
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('sales-inventory-cache').then(cache => {
       return cache.addAll([
         './',
         './index.html',
         './styles.css',
         './app.js',
-        './sw.js',
-        './manifest.json'
+        './manifest.json',
+        './sw.js'
       ]);
     })
   );
 });
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => response || fetch(event.request))
   );
 });
