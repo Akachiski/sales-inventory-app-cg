@@ -2,10 +2,10 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('sales-inventory-cache').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/styles.css',
-        '/app.js'
+        './',
+        './index.html',
+        './styles.css',
+        './app.js'
       ]);
     })
   );
