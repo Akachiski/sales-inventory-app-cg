@@ -1,3 +1,5 @@
+console.log("✅ app.js has loaded");
+
 const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzRSAjArnfrr2Ct8SwmVZlXB1-Jpeo9MOWhfoqTJL34_czSqitHSFXzW4sN22y7JF8M/exec';
 
 // Register service worker with relative path for GitHub Pages
