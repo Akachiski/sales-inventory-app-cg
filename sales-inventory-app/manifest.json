@@ -1,9 +1,0 @@
-{
-  "name": "Sales & Inventory Tracker",
-  "short_name": "InventoryApp",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#007BFF",
-  "icons": []
-}
