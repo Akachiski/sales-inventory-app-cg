@@ -86,3 +86,5 @@ function syncOfflineData() {
     console.error('Failed to retrieve offline data:', event.target.errorCode);
   };
 }
+
+window.syncOfflineData = syncOfflineData;
